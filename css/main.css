@@ -1,54 +1,9 @@
-.popular-repos {
-  border: 1px solid #bbb;
-  font-family: Helvetica, Arial, sans-serif;
-  border-radius: 4px;
-  width: 400px;
-  overflow: hidden;
-}
-.popular-repos .popular-repos-heading {
-  padding: 8px;
-  font-weight: bold;
-  background-color: #eee;
-  border-radius: 4px 4px 0 0;
-  border-bottom: 1px solid #bbb;
-}
-.popular-repos .repo {
-  clear: left;
-  padding: 8px 0;
-  border-bottom: 1px solid #bbb;
-  overflow: hidden;
-}
-.popular-repos .repo:last-child {
-  border-bottom: none;
-}
-.popular-repos .repo .icon,
-.popular-repos .repo .details,
-.popular-repos .repo .stars {
-  float: left;
-}
-.popular-repos .repo .icon {
-  width: 40px;
-  text-align: center;
-  color: #999;
-}
-.popular-repos .repo .details {
-  width: 250px;
-}
-.popular-repos .repo .details .name {
-  font-weight: bold;
-  color: #4183c4 ;
-}
-.popular-repos .repo .details .desc {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  color: #999;
-  margin: 5px 0;
-  font-size: 14px;
-}
-.popular-repos .repo .stars {
-  width: 80px;
-  color: #999;
-  margin-right: 8px;
-  text-align: right;
+/*------------------------Color Styles --*/
+/*------------------------Border Styles --*/
+body {
+  margin: 0;
+  padding: 0;
+  font-style: Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 13px;
+  line-height: 1.4;
 }
