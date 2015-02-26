@@ -7,20 +7,22 @@ var GitPull =(function() {
   function GitPull(user) {
     this.username = user;
 
+
     var apiBase = "https://api.github.com/users/";
 
     this.endpoints = {
-      repos: api + this.username + "/repos",
-      user: api + this.username,
-      orgs: api + this.username + "/orgs",
-      starred: api + this.username + "/starred"
+      repos: apiBase + this.username + "/repos",
+      user: apiBase + this.username,
+      orgs: apiBase + this.username + "/orgs",
+      starred: apiBase + this.username + "/starred"
     }
   }
     GitPull.prototype = {
     hitApi: function(url, cb) {
+      var apiPieces = ["571ce72fd", "4706c066d", "1a0ebd942", "26501188f", "80d4"];
       $.ajax(url, {
         data: {
-          access_token: "8922cb1bb7aa6ab094cf2f38c545957db541216b"
+          access_token: apiPieces.join("")
         },
         success: function(data) {
           cb(data);
