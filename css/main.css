@@ -161,9 +161,7 @@ article.tabs section:target h2 {
 }
 .tab-search .tab-search-box {
   float: left;
-}
-.tab-search .tab-search-box form {
-  width: 348px;
+  width: 350px;
 }
 .tab-search .tab-search-box form .tab-search-field {
   float: left;
@@ -196,4 +194,47 @@ article.tabs section:target h2 {
   background: -o-linear-gradient(#ffffff, #f0f0f0);
   background: -moz-linear-gradient(#ffffff, #f0f0f0);
   background: linear-gradient(#ffffff, #f0f0f0);
+}
+/*----------------------------Repo Template----*/
+.repo-tab {
+  height: 130px;
+  display: block;
+  border-bottom: 1px solid #cccccc;
+}
+.repo-tab .repo-tab-left {
+  float: left;
+}
+.repo-tab .repo-tab-left h3 {
+  color: #4484c2;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 25px 0 10px 0;
+}
+.repo-tab .repo-tab-left h4 {
+  color: #666666;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.repo-tab .repo-tab-left h5 {
+  color: #888888;
+  font-weight: normal;
+  font-size: .9em;
+  margin: 0;
+  padding: 0;
+}
+.repo-tab .repo-tab-right {
+  float: right;
+  color: #888888;
+  font-weight: bold;
+  font-size: .8em;
+}
+.repo-tab .repo-tab-right .repo-icons {
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+.repo-tab .repo-tab-right .repo-icons li {
+  display: inline;
+  margin-left: 10px;
 }

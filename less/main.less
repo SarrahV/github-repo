@@ -1,13 +1,14 @@
 /*------------------------Color Styles --*/
-@lighterGrey:  #f5f5f5; /*head*/
-@lightGrey:    #e5e5e5;
-@lightGreyBG:  #ccc;   
-@greyText:     #a9a9a9;   /*search*/
-@darkText:     #333;    /*icons-text*/
-@iconGrey:     #696969;
-@blueText:     #4484c2;
-@tabGrey:      #666;
-@white:        #fff;
+@lighterGrey:   #f5f5f5; /*head*/
+@lightGrey:     #e5e5e5;
+@lightGreyBG:   #ccc;   
+@greyText:      #a9a9a9;   /*search*/
+@lightGreyText: #888888;
+@darkText:      #333;    /*icons-text*/
+@iconGrey:      #696969;
+@blueText:      #4484c2;
+@tabGrey:       #666;
+@white:         #fff;
 
 /*------------------------Border Styles --*/
 @roundCorner: 6px;
@@ -190,10 +191,9 @@ article.tabs section:target h2 {
 
   .tab-search-box {
     float: left;
+    width: 350px;
 
     form {
-      width: 348px;
-
       .tab-search-field {
         float: left; 
         padding: 4px 0 6px 5px; 
@@ -230,8 +230,57 @@ article.tabs section:target h2 {
     }
   }
 }
+/*----------------------------Repo Template----*/
 
-        
+.repo-tab {
+   height: 130px;
+   display: block;  
+   border-bottom: 1px solid @lightGreyBG;
+
+    .repo-tab-left{
+      float: left;
+
+        h3 {
+          color: @blueText;
+          font-size: 1.5em;
+          padding: 0;
+          margin: 25px 0 10px 0;
+        }
+        h4 {
+          color: @tabGrey;
+          font-weight: normal;
+          font-size: 1em;
+          margin: 0 0 10px 0;
+          padding: 0;
+        }
+        h5 {
+          color: @lightGreyText;
+          font-weight: normal;
+          font-size: .9em;
+          margin: 0;
+          padding: 0;
+        }
+    }
+
+    .repo-tab-right{
+      float: right;
+      color: @lightGreyText;
+      font-weight: bold;
+      font-size: .8em;
+
+        .repo-icons {
+          margin: 25px 0 0 0;
+          padding: 0;
+
+            li {
+              display: inline;
+              margin-left: 10px;
+
+            }
+
+        }
+    }
+}  
         
 
 
