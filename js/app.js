@@ -1,33 +1,34 @@
 var renderAll = function(data) {
-  var repos   = data.repos;
-  var user    = data.user;
-  var orgs    = data.orgs;
-  var starred = data.starred;
+  var userData    = data.user;
+  var orgsData    = data.orgs;
+  var starredData = data.starred;
 
-  var renderUser() {
-    //var userTemplate = JST[...]
-    //...
-  }
+  console.log(userData);
 
-  var renderStats() {
-    //var userTemplate = JST[...]
-    //...
-  }
+  var renderUser = function() {
+    var userTemplate = JST["user"];
+    console.log(userData);
+    $(".user").html(userTemplate(userData));
+  };
 
-  var renderOrgs() {
-    //var userTemplate = JST[...]
-    //...
-  }
-
-  var renderRepos() {
-    //var reposTemplate = JST[...]
-    //...
-  }
+  var renderOrgs = function() {
+    var userTemplate = JST["orgs"];
+    console.log(orgsData);
+    /*$(".orgs").html(userTemplate(orgsData[0]));*/
+    $(".user").append(userTemplate(orgsData[0]));
+  };
+  
+  var renderRepos = function(){
+    var userTemplate = JST["repoTab"];
+    console.log(userData);
+    $(".repo-content")._each.append(userTemplate(userData));
+  };
 
   renderUser();
-  renderRepos();
+  renderOrgs();
+  /*renderRepos();*/
 
-  return renderAll;
+  // return renderAll;
 }
 
 

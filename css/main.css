@@ -72,7 +72,6 @@ body {
 }
 .wrapper aside .user {
   line-height: 1.2;
-  border-bottom: 1px solid #eeeeee;
 }
 .wrapper aside .user span img {
   width: 230px;
