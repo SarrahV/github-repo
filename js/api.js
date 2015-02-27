@@ -1,7 +1,3 @@
-function icon(name) {
- return JST.icon({icon: name});
-}
-
 var GitPull =(function() {
 
   function GitPull(user) {

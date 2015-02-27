@@ -1,33 +1,33 @@
-var App = function() {
+var renderAll = function(data) {
+  var repos   = data.repos;
+  var user    = data.user;
+  var orgs    = data.orgs;
+  var starred = data.starred;
 
-  function App(data) {
-
-    this.data = data;
-
-    this.$profile = $(".profile");
-    this.$repo = $(".repo-content");
-
+  var renderUser() {
+    //var userTemplate = JST[...]
+    //...
   }
 
-  var repoData = (function(){
-  var template = JST["repoTab"];
-    function GetRepo(data) {
-      this.data = data;
-    }
-
-    GetRepo.prototype = {
-      render: function() {
-        return $( template(this.data) );
-      }
-
+  var renderStats() {
+    //var userTemplate = JST[...]
+    //...
   }
 
-  return GetRepo;
+  var renderOrgs() {
+    //var userTemplate = JST[...]
+    //...
+  }
 
-});
+  var renderRepos() {
+    //var reposTemplate = JST[...]
+    //...
+  }
+
+  renderUser();
+  renderRepos();
+
+  return renderAll;
+}
 
 
-
-  return App;
-
-})();  
