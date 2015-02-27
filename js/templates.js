@@ -12,8 +12,8 @@ this["JST"]["repoTab"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"
     + escapeExpression(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"name","hash":{},"data":data}) : helper)))
     + "</h3>\n    <h4>"
     + escapeExpression(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"description","hash":{},"data":data}) : helper)))
-    + "</h4>\n    <h5>"
-    + escapeExpression(((helper = (helper = helpers.updated_at || (depth0 != null ? depth0.updated_at : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"updated_at","hash":{},"data":data}) : helper)))
+    + "</h4>\n    <h5>Updated "
+    + escapeExpression(((helper = (helper = helpers.formatDate || (depth0 != null ? depth0.formatDate : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"formatDate","hash":{},"data":data}) : helper)))
     + "</h5>\n  </div>\n  <div class=\"repo-tab-right\">\n  <ul class=\"repo-icons\">\n    <li>"
     + escapeExpression(((helper = (helper = helpers.language || (depth0 != null ? depth0.language : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"language","hash":{},"data":data}) : helper)))
     + "</li>\n    <li><span class=\"octicon octicon-star\"></span>"
@@ -34,10 +34,12 @@ this["JST"]["user"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"mai
     + "</h3>\n</div>\n<div class=\"user-details\">\n  <ul>\n    <li><span class=\"octicon octicon-location\"></span>"
     + escapeExpression(((helper = (helper = helpers.location || (depth0 != null ? depth0.location : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"location","hash":{},"data":data}) : helper)))
     + "</li>\n    <li><span class=\"octicon octicon-clock\"></span> Joined on "
-    + escapeExpression(((helper = (helper = helpers.created_at || (depth0 != null ? depth0.created_at : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"created_at","hash":{},"data":data}) : helper)))
+    + escapeExpression(((helper = (helper = helpers.formatedDate || (depth0 != null ? depth0.formatedDate : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"formatedDate","hash":{},"data":data}) : helper)))
     + "</li>\n  </ul>\n  <div class=\"stats\">\n  <ul>\n    <li><span>"
     + escapeExpression(((helper = (helper = helpers.followers || (depth0 != null ? depth0.followers : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"followers","hash":{},"data":data}) : helper)))
-    + "</span><p>Followers</p></li>\n    <li>\n      <span>1</span>\n      <p>Starred</p>\n    </li>\n    <li>\n      <span>"
+    + "</span><p>Followers</p></li>\n    <li>\n      <span>"
+    + escapeExpression(((helper = (helper = helpers.myStars || (depth0 != null ? depth0.myStars : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"myStars","hash":{},"data":data}) : helper)))
+    + "</span>\n      <p>Starred</p>\n    </li>\n    <li>\n      <span>"
     + escapeExpression(((helper = (helper = helpers.following || (depth0 != null ? depth0.following : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"following","hash":{},"data":data}) : helper)))
     + "</span>\n      <p>Following</p>\n    </li>\n  </ul>\n</div>\n\n\n\n";
 },"useData":true});
