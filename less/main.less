@@ -1,7 +1,9 @@
 /*------------------------Color Styles --*/
 @lighterGrey:   #f5f5f5; /*head*/
 @lightGrey:     #e5e5e5;
-@lightGreyBG:   #ccc;   
+@lightGreyBG:   #ccc;
+@grey:          #ddd;
+@lightestGrey:  #eee;  
 @greyText:      #a9a9a9;   /*search*/
 @lightGreyText: #888888;
 @darkText:      #333;    /*icons-text*/
@@ -86,10 +88,51 @@ body {
       height: 900px; /*temp*/
       float: left;
 
-        img {
-          width: 230px;
-          height: 230px;
-          border-radius: @roundCorner;
+        .user {
+          line-height: 1.2;
+          border-bottom: 1px solid @lightestGrey;
+
+            img {
+              width: 230px;
+              height: 230px;
+              border-radius: @roundCorner;
+            }
+            h1 {
+              font-size: 2em;
+              color: @darkText;
+              margin: 0;
+              padding: 0;
+            }
+            h3 {
+              font-size: 1.6em;
+              color: @tabGrey;
+              font-weight: lighter;
+              margin: 0px;
+              padding-bottom: 20px; 
+            }
+        }
+
+        .user-details {
+          font-size: 1.1em;
+          padding: 15px 0 15px 0;
+          border-bottom: 1px solid @lightestGrey;
+
+            ul {
+              margin: 0;
+              padding: 0;
+              color: @darkText;
+              list-style-type: none;
+
+                li {
+                  margin-bottom: 5px;
+                }
+
+                span {
+                  color: @grey;
+                  margin-right: 5px;
+                  text-align: center;
+                }
+            }
         }
     }
 
@@ -163,7 +206,7 @@ article.tabs section:target {
   color: #333;
   background-color: #fff;
   z-index: 2;
-  border: 1px solid @lightGreyBG;
+  border: 1px solid @grey;
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -174,7 +217,7 @@ article.tabs section:target h2 {
   color: #333;
   background-color: #fff;
   z-index: 2;
-  border: 1px solid @lightGreyBG;
+  border: 1px solid @grey;
   border-bottom: none;
   border-radius: 2px;
 }
@@ -186,7 +229,7 @@ article.tabs section:target h2 {
 /*----------------------------Tab Search----*/
 .tab-search { 
   padding: 13px 0 0 0;
-  border-bottom: 1px solid @lightGreyBG;
+  border-bottom: 1px solid @grey;
   height: 48px;
 
   .tab-search-box {
@@ -235,7 +278,7 @@ article.tabs section:target h2 {
 .repo-tab {
    height: 130px;
    display: block;  
-   border-bottom: 1px solid @lightGreyBG;
+   border-bottom: 1px solid @lightestGrey;
 
     .repo-tab-left{
       float: left;

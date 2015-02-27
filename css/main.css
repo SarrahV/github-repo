@@ -70,10 +70,46 @@ body {
   /*temp*/
   float: left;
 }
-.wrapper aside img {
+.wrapper aside .user {
+  line-height: 1.2;
+  border-bottom: 1px solid #eeeeee;
+}
+.wrapper aside .user img {
   width: 230px;
   height: 230px;
   border-radius: 6px;
+}
+.wrapper aside .user h1 {
+  font-size: 2em;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+.wrapper aside .user h3 {
+  font-size: 1.6em;
+  color: #666666;
+  font-weight: lighter;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+.wrapper aside .user-details {
+  font-size: 1.1em;
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.wrapper aside .user-details ul {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  list-style-type: none;
+}
+.wrapper aside .user-details ul li {
+  margin-bottom: 5px;
+}
+.wrapper aside .user-details ul span {
+  color: #dddddd;
+  margin-right: 5px;
+  text-align: center;
 }
 .wrapper .main {
   width: 728px;
@@ -136,7 +172,7 @@ article.tabs section:target {
   color: #333;
   background-color: #fff;
   z-index: 2;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -146,7 +182,7 @@ article.tabs section:target h2 {
   color: #333;
   background-color: #fff;
   z-index: 2;
-  border: 1px solid #cccccc;
+  border: 1px solid #dddddd;
   border-bottom: none;
   border-radius: 2px;
 }
@@ -156,7 +192,7 @@ article.tabs section:target h2 {
 /*----------------------------Tab Search----*/
 .tab-search {
   padding: 13px 0 0 0;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #dddddd;
   height: 48px;
 }
 .tab-search .tab-search-box {
@@ -199,7 +235,7 @@ article.tabs section:target h2 {
 .repo-tab {
   height: 130px;
   display: block;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #eeeeee;
 }
 .repo-tab .repo-tab-left {
   float: left;

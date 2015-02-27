@@ -1,4 +1,4 @@
-/*var App = function() {
+var App = function() {
 
   function App(data) {
 
@@ -9,31 +9,25 @@
 
   }
 
+  var repoData = (function(){
+  var template = JST["repoTab"];
+    function GetRepo(data) {
+      this.data = data;
+    }
 
-  /*will need:
+    GetRepo.prototype = {
+      render: function() {
+        return $( template(this.data) );
+      }
 
-  var orgs
-  var starred
-  var user
-  var repo
-
-
-  showProfile (){
-  
   }
 
-  showrepos (){
-  
-  }
+  return GetRepo;
 
-  showProfile (){
-  
-  }
-
-  spit out all the stuff
+});
 
 
 
   return App;
 
-})();  */
+})();  
