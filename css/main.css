@@ -74,7 +74,7 @@ body {
   line-height: 1.2;
   border-bottom: 1px solid #eeeeee;
 }
-.wrapper aside .user img {
+.wrapper aside .user span img {
   width: 230px;
   height: 230px;
   border-radius: 6px;
