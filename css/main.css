@@ -111,6 +111,43 @@ body {
   margin-right: 5px;
   text-align: center;
 }
+.wrapper aside .stats {
+  color: #888888;
+  font-size: .9em;
+  text-align: center;
+  line-height: 1;
+  border-bottom: 1px solid #eeeeee;
+  height: 65px;
+}
+.wrapper aside .stats ul {
+  list-style-type: none;
+  margin: 15px 0;
+  padding: 0;
+}
+.wrapper aside .stats ul li {
+  display: inline;
+  float: left;
+  margin: 0 15px;
+}
+.wrapper aside .stats ul li span {
+  color: #4484c2;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.wrapper aside .stats ul li p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper aside .orgs h2 {
+  color: #333333;
+  font-size: 1.3em;
+}
+.wrapper aside .orgs span img {
+  height: 42px;
+  width: auto;
+}
 .wrapper .main {
   width: 728px;
   padding: 15px 10px 0 10px;
