@@ -34,12 +34,21 @@ body {
     .head-wrap {
       width: 980px;
       height: 40px;
-      padding: 8px 10px 0 10px;
+      padding: 8px 8px 0 8px;
       margin: @auto;
 
       .top-left-menu {
         float: left;
-        width: 600px;
+        width: 625px;
+
+         .octicon-mark-github {
+            font-size: 28px;
+            color: #333333;
+          }
+
+          .octicon-mark-github:hover {
+              color: @blueText;
+            }
 
           .logo {
             float: left;
@@ -62,34 +71,54 @@ body {
             color:@greyText;
             font-size: .9em;
           }
-          .nav {
+          nav {
             float: left;
-          }
+            margin: 0;
 
-         .top-menu {
-            font-size: 1em;
-            font-weight: bold;
-            color: @darkText;
-            list-style-type: none;
-            margin: 0 0 0 10px;
-            padding-top: 5px;
-         }
-         .top-menu li {
-            display: inline;
-            margin: 0 5px 0 5px;
-         }
+             .top-menu {
+                font-size: 1em;
+                font-weight: bold;
+                list-style-type: none;
+                margin: 0 0 0 -25px;
+                padding-top: 5px;
+                color: @darkText;
+
+                a:link, a:visited {
+                  color: @darkText;
+                  text-decoration: none;
+                }
+                a:hover {
+                  color: @blueText;
+                  text-decoration: none;
+                }
+             }
+             .top-menu li {
+                display: inline;
+                margin: 0 5px 0 5px;
+             }
+          }
       }/*end top left*/
 
        .top-right-menu {
           float: right;
           margin: 0;
           padding: 0;
-          background-color: red;
+          text-align: center;
+          line-height: 2em;
+
+          h5 {
+            margin: 0;
+            padding: 0;
+            float: left;
+            font-size: 1em;
+          }
 
           img {
-            width: 16px;
-            height: 16px;
-            border-radius: 2px;
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            float: left;
+            margin-right: 5px;
           }
 
           ul {
@@ -99,6 +128,26 @@ body {
 
               li {
                 display: inline;
+                margin-right:13px;
+
+                a:link, a:visited {
+                  color: @darkText;
+                  text-decoration: none;
+                }
+                a:hover {
+                  color: @blueText;
+                  text-decoration: none;
+                }
+                .octicon-plus {
+                  font-size: 18px;
+                }
+
+                .octicon-triangle-down {
+                  font-size: 12px;
+                }
+                .octicon-inbox {
+                  font-size: 19px;
+                }
               }
           }
       } /*end top right menu*/
@@ -228,10 +277,32 @@ body {
 article.tabs {
   position: relative;
   display: block;
-  width: 40em;
-  height: 15em;
+  width: 720px;
+  height: 100px;
   margin: 0px;
   font-size: 1.1em;
+
+    .profile {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 28px;
+      padding: 0px 10px 3px 10px;
+      border: 1px solid @lightGreyBG;
+      color: @darkText;
+      font-size: .9em;
+      font-weight: bold;
+      border-radius: 3px; 
+      -moz-border-radius: 3px; 
+      -webkit-border-radius: 3px;
+      box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+      -webkit-box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+      -moz-box-shadow:inset 0px 2px 2px rgba(255,255,255,.5);
+      background: -webkit-linear-gradient(@white, #f0f0f0); 
+      background: -o-linear-gradient(@white, #f0f0f0); 
+      background: -moz-linear-gradient(@white, #f0f0f0); 
+      background: linear-gradient(@white, #f0f0f0);
+    }
 
     section {
       position: absolute;
@@ -255,7 +326,7 @@ article.tabs section h2 {
   text-align: center;
   font-size: 1em;
   font-weight: normal;
-  width: 130px;
+  width: 115px;
   height: 2em;
   top: -2.3em;
   left: 0;
@@ -306,13 +377,15 @@ article.tabs section:target h2 {
 
 /*----------------------------Tab Search----*/
 .tab-search { 
+  float: left;
   padding: 13px 0 0 0;
   border-bottom: 1px solid @grey;
   height: 48px;
+  width: 720px;
 
   .tab-search-box {
     float: left;
-    width: 350px;
+    width: 335px;
 
     form {
       .tab-search-field {
@@ -350,9 +423,68 @@ article.tabs section:target h2 {
       }
     }
   }
-}
-/*----------------------------Repo Template----*/
+  ul.search-menu {
+    float: right;
+    height: 25px;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
 
+      li {
+        display: inline;
+        padding: 2px;
+
+          a:link, a:visited {
+            color: @blueText;
+            text-decoration: none;
+          }
+          a:hover {
+            color: @blueText;
+            text-decoration: underline;
+          }
+          .checked a:link {
+            color: @darkText;
+            text-decoration: none;
+            font-weight: bold;
+          }
+          button {
+            background: rgba(139,218,113,1);
+            background: -moz-linear-gradient(top, rgba(139,218,113,1) 0%, rgba(99,175,74,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(139,218,113,1)), color-stop(100%, rgba(99,175,74,1)));
+            background: -webkit-linear-gradient(top, rgba(139,218,113,1) 0%, rgba(99,175,74,1) 100%);
+            background: -o-linear-gradient(top, rgba(139,218,113,1) 0%, rgba(99,175,74,1) 100%);
+            background: -ms-linear-gradient(top, rgba(139,218,113,1) 0%, rgba(99,175,74,1) 100%);
+            background: linear-gradient(to bottom, rgba(139,218,113,1) 0%, rgba(99,175,74,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8bda71', endColorstr='#63af4a', GradientType=0 );
+            border: 1px solid #5ea847;
+            border-radius: 3px;
+            color: @white;
+            font-size: .9em;
+            font-weight: bold;
+            text-align: center;
+            padding: 5px 12px 10px 12px;
+
+              .shadow {
+                margin: 0;
+                padding: 0;
+                text-shadow: 0px -1px #639e50;
+              }
+              .octicon-repo {
+                margin: 0;
+                padding: 0;
+                text-shadow: 0px -1px #639e50;
+              }
+          }
+      }
+  }
+}
+  
+
+
+/*----------------------------Repo Template----*/
+.clear {
+  clear: both;
+}
 .repo-tab {
    height: 130px;
    display: block;  

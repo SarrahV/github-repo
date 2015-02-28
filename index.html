@@ -18,62 +18,39 @@
           <span class="mega-octicon octicon-mark-github logo"></span>
            <div class="search"><!-- BEGIN SEARCH FORM -->
             <form class="search-form" action="" method="">
-              <input class="search-field" type="text" name="search" placeholder="Search GitHub" size="55">
+              <input class="search-field" type="text" name="search" placeholder="Search GitHub" size="57">
             </form>
-          </div><!-- END SEARCH FORM -->
-          <nav>
-            <ul class="top-menu">
-              <li>Explore</li>
-              <li>Gist</li>
-              <li>Blog</li>
-              <li>Help</li>
-            </ul>
-          </nav>
-        </div><!-- SEARCH END -->
-      </div>
+          </div><!-- SEARCH END -->
+        </div><!-- END SEARCH FORM -->
+        <nav>
+          <ul class="top-menu">
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Gist</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </nav>
+      </div><!--end top left-->
     <div class="top-right-menu">
       <nav>
         <ul>
-          <li><img src="images/sarrah.jpg" width="16px" height="16px" alt="Sarrah Vesselov Image"> SarrahV</li>
-          <li><span class="octicon octicon-plus"></span>
-            <span class="octicon octicon-triangle-down"></span>
+          <li><img src="images/sarrah.jpg" width="16px" height="16px" alt="Sarrah Vesselov Image"> <h5><a href="#">SarrahV</a></h5></li>
+          <li><a href="#"><span class="octicon octicon-plus"></span>
+            <span class="octicon octicon-triangle-down"></span></a>
           </li>
-          <li><span class="octicon octicon-inbox"></span></li>
-          <li><span class="octicon octicon-gear"></span></li>
-          <li><span class="octicon octicon-sign-in"></span></li>
+          <li><a href="#"><span class="octicon octicon-inbox"></span></a></li>
+          <li><a href="#"><span class="octicon octicon-gear"></span></a></li>
+          <li><a href="#"><span class="octicon octicon-sign-out"></span></a></li>
         </ul>
       </nav>
     </div>
-  </div>
+  </div><!--headwrap-->
   </header><!-- HEADER END -->
   <div class="wrapper"><!-- WRAPPER START -->
     <aside><!-- ASIDE START --> 
       <div class="user">
-
+      <!-- USER TEMPLATE PULLED IN HERE -->
       </div>
-      <!-- <div class="user-details">
-        <ul>
-          <li><span class="octicon octicon-location"></span> Tampa Bay</li>
-          <li><span class="octicon octicon-clock"></span> Joined on Sep 10, 2014</li>
-        </ul>
-      </div> 
-      <div class="stats">
-        <ul>
-          <li><span>0</span><p>Followers</p></li>
-          <li>
-            <span>1</span>
-            <p>Starred</p>
-          </li>
-          <li>
-            <span>0</span>
-            <p>Following</p>
-          </li>
-        </ul>
-      </div>
-      <div class="orgs">
-        <h2>Organizations</h2>
-        <span><img src="images/org.png" alt=""></span>
-      </div> -->
     </aside><!-- ASIDE END -->
     <div class="main"><!-- MAIN START -->  
         <article class="tabs">
@@ -88,11 +65,21 @@
             <div class="tab-search">
               <div class="tab-search-box"><!-- BEGIN SEARCH FORM -->
                 <form class="search-form" action="" method="">
-                  <input class="tab-search-field" type="text" name="search" placeholder="Find a repository..." size="38">
+                  <input class="tab-search-field" type="text" name="search" placeholder="Find a repository..." size="36">
                   <input class="submit" type="submit" name="submit" value="Search">
                 </form>
               </div><!-- END SEARCH FORM -->
+                <ul class="search-menu">
+                  <li class="checked"><a href="#tab2">All</a></li>
+                  <li><a href="#tab2">Public</a></li>
+                  <li><a href="#tab2">Private</a></li>
+                  <li><a href="#tab2">Sources</a></li>
+                  <li><a href="#tab2">Forks</a></li>
+                  <li><a href="#tab2">Mirrors</a></li>
+                  <li><button><span class="octicon octicon-repo"></span> <span class="shadow">New</span></button></li>
+                </ul>
             </div><!-- SEARCH END -->
+            <div class="clear"></div>
             <div class="repo-content">
 
             </div>
@@ -102,7 +89,7 @@
             <h2><a href="#tab3"><span class="octicon octicon-rss icon-space"></span>Public Activity</a></h2>
             <p>This content appears on tab 3.</p>
           </section>
-
+          <button class="profile"><span class="octicon octicon-pencil"></span> Edit profile</button>
         </article>
     </div><!-- MAIN END --> 
     <footer><!-- FOOTER START -->  
