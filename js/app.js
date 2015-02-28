@@ -4,7 +4,7 @@ var renderAll = function(data) {
   var repoData    = data.repos;
   var starredData = data.starred;
 
-  console.log(userData);
+  console.log(orgsData);
 
   var renderUser = function() {
     var userTemplate = JST["user"];

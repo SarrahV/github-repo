@@ -37,49 +37,79 @@ body {
       padding: 8px 10px 0 10px;
       margin: @auto;
 
-        .logo {
-          float: left;
-        }
+      .top-left-menu {
+        float: left;
+        width: 600px;
 
-        .search {
-          margin-left: 10px;
-          float: left;
-        }
+          .logo {
+            float: left;
+          }
 
-        form {
-          width: 350px;
-        }
-        .search-field { 
-          padding: 4px 0 6px 5px; 
-          background-color: @white; 
-          border: 1px solid @lightGreyBG;
-          height: 15px;
-          border-radius: 3px; 
-          color:@greyText;
-          font-size: .9em;
-        }
-      }
-     .nav {
-          float: left;
-      }
+          .search {
+            margin-left: 10px;
+            float: left;
+          }
 
-     .top-menu {
-        font-size: 1em;
-        font-weight: bold;
-        color: @darkText;
-        list-style-type: none;
-        margin: 0 0 0 10px;
-        padding-top: 5px;
-     }
-     .top-menu li {
-        display: inline;
-        margin: 0 5px 0 5px;
-     }
-}
+          form {
+           
+          }
+          .search-field { 
+            padding: 4px 0 6px 5px; 
+            background-color: @white; 
+            border: 1px solid @lightGreyBG;
+            height: 15px;
+            border-radius: 3px; 
+            color:@greyText;
+            font-size: .9em;
+          }
+          .nav {
+            float: left;
+          }
+
+         .top-menu {
+            font-size: 1em;
+            font-weight: bold;
+            color: @darkText;
+            list-style-type: none;
+            margin: 0 0 0 10px;
+            padding-top: 5px;
+         }
+         .top-menu li {
+            display: inline;
+            margin: 0 5px 0 5px;
+         }
+      }/*end top left*/
+
+       .top-right-menu {
+          float: right;
+          margin: 0;
+          padding: 0;
+          background-color: red;
+
+          img {
+            width: 16px;
+            height: 16px;
+            border-radius: 2px;
+          }
+
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+              li {
+                display: inline;
+              }
+          }
+      } /*end top right menu*/
+    }/*end head wrap*/
+}/*end top head*/
+
 .wrapper {
   width: 1000px;
   height: 900px; /*temp*/
   margin: @auto;
+  clear: both;
 
     aside {
       width: 230px;
