@@ -153,7 +153,7 @@ body {
 .wrapper {
   width: 1000px;
   min-height: 100%;
-  margin: 0 auto -100px;
+  margin: 0 auto 235% auto;
 
   aside {
     width: 230px;
@@ -310,7 +310,7 @@ body {
         top: 35px;
         left: 0;
         width: 720px;
-        height: 800px;
+        height: 2550px;
         padding: 0;
         z-index: 0;
         border:none;
@@ -482,12 +482,77 @@ body {
   }/*end main*/
 }/*end wrapper*/
 
-footer, .push {
-      clear: both;
-      height: 99px;
-      width: 100%;
-      border-top: 1px solid @lightestGrey;
-      background-color: red;
+footer {
+  height: 99px;
+  width: 100%;
+
+  .foot-wrap {
+    width: 980px;
+    height: 40px;
+    padding: 50px 8px 0 8px;
+    margin: @auto;
+    border-top: 1px solid @lightestGrey;
+    color: @lightGreyBG;
+    font-size: .9em;
+
+    .left-foot-menu {
+      float: left;
+      color: @tabGrey;
+        
+        ul {
+          margin: 0;
+          padding: 0;
+          
+          li {
+            list-style-type: none;
+            display: inline;
+            margin-right: 15px;
+
+            a:link, a:visited {
+              color: @blueText;
+              text-decoration: none;
+            }
+
+            a:hover {
+              color: @blueText;
+              text-decoration: underline;
+            }
+          }
+        }
+    }
+    .octicon-mark-github {
+      margin: 0 45%;
+      float: left;
+      font-size: 25px;
+      position: absolute;
+      z-index: 1;
+
+    }
+    .right-foot-menu {
+      float: right;
+        
+        ul {
+          margin: 0;
+          padding: 0;
+          
+          li {
+            list-style-type: none;
+            display: inline;
+            margin-left: 15px;
+
+            a:link, a:visited {
+              color: @blueText;
+              text-decoration: none;
+            }
+
+            a:hover {
+              color: @blueText;
+              text-decoration: underline;
+            }
+          }
+        }
+    }
+  }
 }
 /*----------------------------Repo Template----*/
 .clear {
@@ -519,6 +584,7 @@ footer, .push {
       margin: 0 0 10px 0;
       padding: 0;
     }
+
     h5 {
       color: @lightGreyText;
       font-weight: normal;
@@ -527,7 +593,6 @@ footer, .push {
       padding: 0;
     }
   }
-
   .repo-tab-right{
     float: right;
     color: @lightGreyText;

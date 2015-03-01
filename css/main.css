@@ -129,7 +129,7 @@ body {
 .wrapper {
   width: 1000px;
   min-height: 100%;
-  margin: 0 auto -100px;
+  margin: 0 auto 235% auto;
   /*aside end*/
   /*end main*/
 }
@@ -270,7 +270,7 @@ body {
   top: 35px;
   left: 0;
   width: 720px;
-  height: 800px;
+  height: 2550px;
   padding: 0;
   z-index: 0;
   border: none;
@@ -430,13 +430,68 @@ body {
   text-shadow: 0px -1px #639e50;
 }
 /*end wrapper*/
-footer,
-.push {
-  clear: both;
+footer {
   height: 99px;
   width: 100%;
+}
+footer .foot-wrap {
+  width: 980px;
+  height: 40px;
+  padding: 50px 8px 0 8px;
+  margin: 0 auto 0 auto;
   border-top: 1px solid #eeeeee;
-  background-color: red;
+  color: #cccccc;
+  font-size: .9em;
+}
+footer .foot-wrap .left-foot-menu {
+  float: left;
+  color: #666666;
+}
+footer .foot-wrap .left-foot-menu ul {
+  margin: 0;
+  padding: 0;
+}
+footer .foot-wrap .left-foot-menu ul li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 15px;
+}
+footer .foot-wrap .left-foot-menu ul li a:link,
+footer .foot-wrap .left-foot-menu ul li a:visited {
+  color: #4484c2;
+  text-decoration: none;
+}
+footer .foot-wrap .left-foot-menu ul li a:hover {
+  color: #4484c2;
+  text-decoration: underline;
+}
+footer .foot-wrap .octicon-mark-github {
+  margin: 0 45%;
+  float: left;
+  font-size: 25px;
+  position: absolute;
+  z-index: 1;
+}
+footer .foot-wrap .right-foot-menu {
+  float: right;
+}
+footer .foot-wrap .right-foot-menu ul {
+  margin: 0;
+  padding: 0;
+}
+footer .foot-wrap .right-foot-menu ul li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 15px;
+}
+footer .foot-wrap .right-foot-menu ul li a:link,
+footer .foot-wrap .right-foot-menu ul li a:visited {
+  color: #4484c2;
+  text-decoration: none;
+}
+footer .foot-wrap .right-foot-menu ul li a:hover {
+  color: #4484c2;
+  text-decoration: underline;
 }
 /*----------------------------Repo Template----*/
 .clear {
