@@ -12,7 +12,7 @@ var renderAll = function(data) {
 
     var createdAt = new Date(userData.created_at);
     var m = moment(createdAt);
-    var formatedDate = m.format("MMM Do YYYY");
+    var formatedDate = m.format("MMM Do, YYYY");
 
     userData.formatedDate = formatedDate;
 

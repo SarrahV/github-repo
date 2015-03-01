@@ -128,20 +128,23 @@ body {
 /*end top head*/
 .wrapper {
   width: 1000px;
-  height: 900px;
-  /*temp*/
-  margin: 0 auto 0 auto;
-  clear: both;
+  min-height: 100%;
+  margin: 0 auto -100px;
+  /*aside end*/
+  /*end main*/
 }
 .wrapper aside {
   width: 230px;
   padding: 15px 10px 10px 10px;
-  height: 900px;
-  /*temp*/
+  min-height: 100%;
+  height: 100%;
   float: left;
 }
 .wrapper aside .user {
   line-height: 1.2;
+}
+.wrapper aside .user .user-name {
+  border-bottom: 1px solid #eeeeee;
 }
 .wrapper aside .user span img {
   width: 230px;
@@ -162,6 +165,7 @@ body {
   padding-bottom: 20px;
 }
 .wrapper aside .user-details {
+  height: 100%;
   font-size: 1.1em;
   padding: 15px 0 15px 0;
   border-bottom: 1px solid #eeeeee;
@@ -179,6 +183,9 @@ body {
   color: #dddddd;
   margin-right: 5px;
   text-align: center;
+}
+.wrapper aside .user-details .octicon-location {
+  padding: 0 5px 0 2px;
 }
 .wrapper aside .stats {
   color: #888888;
@@ -220,12 +227,15 @@ body {
 .wrapper .main {
   width: 728px;
   padding: 15px 10px 0 10px;
-  height: 900px;
-  /*temp*/
-  float: left;
+  height: 100%;
+  float: right;
+  margin-bottom: 100%;
+  /*end article tab*/
+  /*----------------------------Tab Search----*/
+  /*end tab search*/
 }
-/*----------------------------Tab Menu----*/
-article.tabs {
+.wrapper .main article.tabs {
+  /*tab menu */
   position: relative;
   display: block;
   width: 720px;
@@ -233,7 +243,7 @@ article.tabs {
   margin: 0px;
   font-size: 1.1em;
 }
-article.tabs .profile {
+.wrapper .main article.tabs .profile {
   position: absolute;
   top: 0;
   right: 0;
@@ -254,7 +264,7 @@ article.tabs .profile {
   background: -moz-linear-gradient(#ffffff, #f0f0f0);
   background: linear-gradient(#ffffff, #f0f0f0);
 }
-article.tabs section {
+.wrapper .main article.tabs section {
   position: absolute;
   display: block;
   top: 35px;
@@ -265,10 +275,10 @@ article.tabs section {
   z-index: 0;
   border: none;
 }
-article.tabs section:first-child {
+.wrapper .main article.tabs section:first-child {
   z-index: 1;
 }
-article.tabs section h2 {
+.wrapper .main article.tabs section h2 {
   position: absolute;
   text-align: center;
   font-size: 1em;
@@ -281,13 +291,13 @@ article.tabs section h2 {
   margin: 0;
   color: #666666;
 }
-article.tabs section:nth-child(2) h2 {
+.wrapper .main article.tabs section:nth-child(2) h2 {
   left: 135px;
 }
-article.tabs section:nth-child(3) h2 {
+.wrapper .main article.tabs section:nth-child(3) h2 {
   left: 274px;
 }
-article.tabs section h2 a {
+.wrapper .main article.tabs section h2 a {
   display: block;
   width: 100%;
   line-height: 1.8em;
@@ -295,7 +305,7 @@ article.tabs section h2 a {
   color: inherit;
   outline: 0 none;
 }
-article.tabs section:target {
+.wrapper .main article.tabs section:target {
   color: #333;
   background-color: #fff;
   z-index: 2;
@@ -305,7 +315,7 @@ article.tabs section:target {
   border-right: none;
   border-radius: 2px;
 }
-article.tabs section:target h2 {
+.wrapper .main article.tabs section:target h2 {
   color: #333;
   background-color: #fff;
   z-index: 2;
@@ -313,22 +323,27 @@ article.tabs section:target h2 {
   border-bottom: none;
   border-radius: 2px;
 }
-.icon-space {
+.wrapper .main .icon-space {
   margin-right: 5px;
 }
-/*----------------------------Tab Search----*/
-.tab-search {
+.wrapper .main .tab-search {
   float: left;
   padding: 13px 0 0 0;
   border-bottom: 1px solid #dddddd;
   height: 48px;
   width: 720px;
+  /*end tab search box*/
+  /* end search menu */
 }
-.tab-search .tab-search-box {
+.wrapper .main .tab-search .tab-search-box {
   float: left;
   width: 335px;
+  /*end form*/
 }
-.tab-search .tab-search-box form .tab-search-field {
+.wrapper .main .tab-search .tab-search-box form {
+  /*end submit*/
+}
+.wrapper .main .tab-search .tab-search-box form .tab-search-field {
   float: left;
   padding: 4px 0 6px 5px;
   background-color: #ffffff;
@@ -341,7 +356,7 @@ article.tabs section:target h2 {
   -webkit-box-shadow: inset 0px 0px 2px rgba(3, 3, 3, 0.2);
   -moz-box-shadow: inset 0px 0px 2px rgba(3, 3, 3, 0.2);
 }
-.tab-search .tab-search-box form .submit {
+.wrapper .main .tab-search .tab-search-box form .submit {
   float: right;
   height: 37px;
   padding: 6px 10px;
@@ -360,32 +375,34 @@ article.tabs section:target h2 {
   background: -moz-linear-gradient(#ffffff, #f0f0f0);
   background: linear-gradient(#ffffff, #f0f0f0);
 }
-.tab-search ul.search-menu {
+.wrapper .main .tab-search ul.search-menu {
   float: right;
   height: 25px;
   list-style-type: none;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 0;
+  /*end li*/
 }
-.tab-search ul.search-menu li {
+.wrapper .main .tab-search ul.search-menu li {
   display: inline;
   padding: 2px;
+  /*end button*/
 }
-.tab-search ul.search-menu li a:link,
-.tab-search ul.search-menu li a:visited {
+.wrapper .main .tab-search ul.search-menu li a:link,
+.wrapper .main .tab-search ul.search-menu li a:visited {
   color: #4484c2;
   text-decoration: none;
 }
-.tab-search ul.search-menu li a:hover {
+.wrapper .main .tab-search ul.search-menu li a:hover {
   color: #4484c2;
   text-decoration: underline;
 }
-.tab-search ul.search-menu li .checked a:link {
+.wrapper .main .tab-search ul.search-menu li .checked a:link {
   color: #333333;
   text-decoration: none;
   font-weight: bold;
 }
-.tab-search ul.search-menu li button {
+.wrapper .main .tab-search ul.search-menu li button {
   background: #8bda71;
   background: -moz-linear-gradient(top, #8bda71 0%, #63af4a 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #8bda71), color-stop(100%, #63af4a));
@@ -402,15 +419,24 @@ article.tabs section:target h2 {
   text-align: center;
   padding: 5px 12px 10px 12px;
 }
-.tab-search ul.search-menu li button .shadow {
+.wrapper .main .tab-search ul.search-menu li button .shadow {
   margin: 0;
   padding: 0;
   text-shadow: 0px -1px #639e50;
 }
-.tab-search ul.search-menu li button .octicon-repo {
+.wrapper .main .tab-search ul.search-menu li button .octicon-repo {
   margin: 0;
   padding: 0;
   text-shadow: 0px -1px #639e50;
+}
+/*end wrapper*/
+footer,
+.push {
+  clear: both;
+  height: 99px;
+  width: 100%;
+  border-top: 1px solid #eeeeee;
+  background-color: red;
 }
 /*----------------------------Repo Template----*/
 .clear {
@@ -429,6 +455,9 @@ article.tabs section:target h2 {
   font-size: 1.5em;
   padding: 0;
   margin: 25px 0 10px 0;
+}
+.repo-tab .repo-tab-left h3:hover {
+  text-decoration: underline;
 }
 .repo-tab .repo-tab-left h4 {
   color: #666666;
@@ -458,3 +487,4 @@ article.tabs section:target h2 {
   display: inline;
   margin-left: 10px;
 }
+/*end repo tab*/
