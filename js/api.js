@@ -13,20 +13,21 @@ var GitPull =(function() {
       starred: apiBase + this.username + "/starred"
     }
   }
-    GitPull.prototype = {
+  
+  GitPull.prototype = {
     hitApi: function(url, cb) {
       var apiPieces = ["571ce72fd", "4706c066d", "1a0ebd942", "26501188f", "80d4"];
-      $.ajax(url, {
-        data: {
-          access_token: apiPieces.join("")
-        },
-        success: function(data) {
-          cb(data);
-        },
-        error: function() {
-          console.log("Error loading", url);
-        }
-      });
+        $.ajax(url, {
+          data: {
+            access_token: apiPieces.join("")
+          },
+          success: function(data) {
+            cb(data);
+          },
+          error: function() {
+            console.log("Error loading", url);
+          }
+        });
     },
 
     repos: function(cb) {
@@ -46,13 +47,7 @@ var GitPull =(function() {
     },
 
     loadAll: function(cb) {
-      // calls callback with hash of data like below
-      // {
-      //   repos: //repo data,
-      //   user: //user data,
-      //   starred: //starred data,
-      //   orgs: //org data
-      // }
+
       var dataGroups = {};
 
       var afterCB = _.after(4, cb);
@@ -81,11 +76,8 @@ var GitPull =(function() {
         afterCB(dataGroups);
       });
     }
-
   }
-
   return GitPull
-
 })();
 
 

@@ -8,7 +8,6 @@ var renderAll = function(data) {
 
   var renderUser = function() {
     var userTemplate = JST["user"];
-    //console.log(userData);
 
     var createdAt = new Date(userData.created_at);
     var m = moment(createdAt);
@@ -23,9 +22,6 @@ var renderAll = function(data) {
 
   var renderOrgs = function() {
     var userTemplate = JST["orgs"];
-    //console.log(orgsData);
-    /*$(".orgs").html(userTemplate(orgsData[0]));*/
-
 
     $(".user").append(userTemplate(orgsData[0]));
   };
@@ -45,17 +41,13 @@ var renderAll = function(data) {
   };
 
   var renderRepos =function(){
-      _.each(repoData, function(myRepo) {
+    _.each(repoData, function(myRepo) {
       renderRepo(myRepo)
     });
   };
-
   renderUser();
   renderOrgs();
   renderRepos();
-  //renderRepos(repoData[0]);
-
-
 }
 
 
